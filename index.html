@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片重命名工具</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入Tesseract.js用于OCR -->
+    <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h1>图片重命名工具</h1>
+        
+        <div class="upload-area">
+            <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+            <button id="selectButton" class="primary-button">
+                <svg class="upload-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                </svg>
+                选择图片
+            </button>
+        </div>
+
+        <div id="imageList" class="image-list"></div>
+        
+        <div class="actions">
+            <button id="processButton" class="secondary-button" disabled>处理选中的图片</button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

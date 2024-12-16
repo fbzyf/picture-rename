@@ -1,0 +1,14 @@
+{
+    "api": {
+        "base_url": "https://api.deepseek.com/v1",
+        "model": "deepseek-chat"
+    },
+    "ocr": {
+        "lang": "chi_sim+eng",
+        "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+    },
+    "file": {
+        "max_length": 50,
+        "illegal_chars": ["\\", "/", ":", "*", "?", "\"", "<", ">", "|"]
+    }
+} 
